@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SeTestNG" parallel="false">
+    <test name="testLogin">
+        <classes>
+            <parameter name="userN" value="admin"></parameter>
+            <parameter name="password" value="asdf"></parameter>
+            <parameter name="firstName" value="Miucin"></parameter>
+            <parameter name="lastName" value="Sebastian"></parameter>
+            <parameter name="phone" value="087xxxxx"></parameter>
+            <parameter name="email" value="george@gh.com"></parameter>
+            <parameter name="adress1" value="Strxx.nr8"></parameter>
+            <parameter name="city" value="timisoara"></parameter>
+            <parameter name="state" value="romania"></parameter>
+            <parameter name="postalCode" value="300310"></parameter>
+            <parameter name="tara" value="ROMANIA"></parameter>
+            <class name="com.company.SeTestNG">
+                <methods>
+                    <include name="testLogin" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="register">
+        <classes>
+            <class name="com.company.SeTestNG">
+                <methods>
+                    <include name="register" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="VerifyTitle">
+        <classes>
+            <class name="com.company.SeTestNG">
+                <methods>
+                    <include name="VerifyTitle" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+<test name="writeDataFromWebSite">
+<classes>
+    <class name="com.company.SeTestNG">
+        <methods>
+            <include name="writeDataFromWebSite" />
+        </methods>
+    </class>
+</classes>
+</test>
+</suite>
